@@ -1,0 +1,133 @@
+main
+{
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+}
+header
+{
+    width: 1280px;
+    margin: 0 auto;
+    
+}
+nav ul
+{
+    text-align: center;
+    
+}
+nav li
+{
+    display:inline-block;
+    margin: 5px 15px;
+    padding: 15px;
+    
+} 
+nav a 
+{
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #16a085;
+    letter-spacing: 1px;
+}     
+
+img 
+{
+    width: 100%;
+}
+
+.img-text
+{
+    width: 1280px;
+    background-color: #f5f6f7;
+    display: flex;        
+    flex-direction: column; 
+    align-items: center;
+}
+.text
+{
+    width: 1280px;
+    height: auto;
+    margin-top: 20px;
+}
+h1
+{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: "Roboto",sans-serif;;
+    color: rgb(55, 55, 55);
+    line-height: 1.2;
+    font-weight: 800;
+}
+p
+{
+    color: rgb(55, 55, 55);
+    text-align: center;
+    width: 80%;
+    margin: 25px auto;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.text2
+{
+    width: 100%;
+}
+@font-face {
+    font-family:"Gotham-Rounded-Bold";
+    src: url("Gotham-Rounded-Bold.ttf") ,format("opentype");
+}  
+.button
+{
+     border-radius: 3px;
+    border-color: #16a085;
+    background-color: rgb(22, 160, 133);
+    width: 192px;
+    height: 51px;
+    margin: 0px 0px 60px 0px;
+}
+a
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "Gotham-Rounded-Bold";
+    letter-spacing: 1.5px;
+    width: 192px;
+    height: 51px;
+}
+
+footer
+{
+    width: 1280px;
+    margin: 25px auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(55, 55, 55);
+    
+}
+ .left1
+{
+    text-transform: uppercase;
+ 
+}  
+.color
+{
+    color: #16a085;
+    font-weight: 700;
+}
+
