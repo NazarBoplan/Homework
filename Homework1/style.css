@@ -130,6 +130,15 @@ footer
     color: #16a085;
     font-weight: 700;
 }
-
+.button:hover {
+    
+    background-color: rgb(21, 148, 123);
+    
+}
+.button:active 
+{
+    background: rgb(13, 78, 65);
+    border-style:solid;
+}
 
 
