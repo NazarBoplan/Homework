@@ -1,0 +1,40 @@
+body
+{
+    width: 1280px;
+}
+p.zagolovok
+{
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 25px;
+}
+header
+{
+    width: 1280px;
+    margin: 0 auto;
+}
+nav ul
+{
+    text-align: center;
+    background-color: aqua;
+}
+nav li
+{
+    display:inline-block;
+    margin: 5px 15px;
+    padding: 15px;
+} 
+nav a 
+{
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}     
