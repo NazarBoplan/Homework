@@ -4,6 +4,12 @@ header
     width: 1280px;
     margin: 0 auto;
 }
+main
+{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+}
 a.golova 
 {
     text-align: left;
@@ -14,25 +20,27 @@ a.golova
     font-style: normal;
     color: black;
 }
-nav
+.color1
+{
+    color:#4bcaff;
+}
+.topmenu
 {
     overflow: hidden;
     margin-top: 10px;
 }
-nav ul
+.topmenu ul
 {
     text-align: center;
     background-color: #35444f;
     margin: 0 auto;
-    padding: 0px;
-    
 }
-nav li
+.topmenu li
 {
     display:inline-block;
     padding: 20px;
 } 
-nav a 
+.topmenu a 
 {
     text-decoration: none;
     font-family: "Roboto";
@@ -40,11 +48,36 @@ nav a
     font-size: 24px;
     color: white;
 }  
-nav li:hover
+.topmenu li:hover
 {
     background-color: #222f3a;
     cursor: pointer;
     outline: 1px solid #818181;
 }   
-
-  
+.leftmenu ul
+{
+    text-align: left;
+    margin: 0 auto;
+}
+.leftmenu a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(72, 88, 99);
+  font-family: "Roboto";
+}
+.leftmenu  li
+{ 
+ padding: 25px;      
+}
+ .leftmenu
+{
+  margin-top: 35px;
+  width: auto;
+  border: 1px solid black;
+  text-align: left;
+}
+.leftmenu li:hover
+{
+    background-color: #dbdbdb;
+}
