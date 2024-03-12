@@ -2,15 +2,26 @@
 header
 {
     width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
+    height: auto;
 }
 main
 {
     width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: flex-start;
+    height: auto;
 }
-a.golova 
+h1
+{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+h1 a
 {
     text-align: left;
     text-decoration: none;
@@ -61,23 +72,115 @@ a.golova
 }
 .leftmenu a
 {
-  text-decoration: none;
-  font-size: 24px;
-  color: rgb(72, 88, 99);
-  font-family: "Roboto";
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(72, 88, 99);
+    font-family: "Roboto";
 }
 .leftmenu  li
 { 
- padding: 25px;      
+    padding: 25px;      
 }
  .leftmenu
 {
-  margin-top: 35px;
-  width: auto;
-  border: 1px solid black;
-  text-align: left;
+    margin-top: 35px;
+    width: fit-content;
+    border: 1px solid black;
+    text-align: left;
+    height: fit-content;
+    left: 10px
 }
 .leftmenu li:hover
 {
     background-color: #dbdbdb;
 }
+.img-text
+{
+    width: 1000px;
+    margin-left: auto;
+    align-items: center;
+}
+.img-container
+{
+    border: 1px solid black;
+    margin-top: 35px;
+    width: auto;
+    overflow: hidden;
+}
+img
+{
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}  
+img:hover 
+{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+.text
+{
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: left;
+    width: 93%;
+}
+.text p
+{
+    margin: 0px 0px 25px 0px;
+    font-family: "Roboto";
+    color: rgb(44, 44, 44);
+    font-size: 18px;
+}
+
+footer
+{
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.belowmenu ul
+{
+    text-align: left;
+    background-color: #b4b7ba;
+    margin: 0 auto;
+}
+.belowmenu li
+{
+    display: inline-block;
+    padding: 20px;      
+}
+.belowmenu a
+{
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 28px;
+    color:#0c1927;
+}
+.belowmenu a:hover
+{
+    text-decoration: underline;
+    color: #3181a6;
+}
+.copy
+{
+    float: right;
+    text-align: center;
+    padding: 25px;
+    font-size: 24px;
+    font-family: "Roboto";
+}
+
+.Copyright_©_2018 {
+    font-size: 24px;
+    font-family: "Myriad Pro";
+    color: rgb(1, 1, 1);
+    line-height: 3.75;
+    text-align: left;
+    position: absolute;
+    left: 1169.937px;
+    top: 1261.984px;
+    z-index: 5;
+  }
+  
