@@ -81,7 +81,7 @@ h1 a
 }
 .leftmenu  li
 { 
-    padding: 25px;      
+    padding: 25px;  
 }
  .leftmenu
 {
@@ -146,18 +146,18 @@ footer
     margin: 0 auto;
     height: auto;
 }
-.belowmenu ul
+.bottommenu ul
 {
     text-align: left;
     background-color: #b4b7ba;
     margin: 0 auto;
 }
-.belowmenu li
+.bottommenu li
 {
     display: inline-block;
     padding: 20px;      
 }
-.belowmenu a
+.bottommenu a
 {
     text-decoration: none;
     font-family: "Roboto";
@@ -165,7 +165,7 @@ footer
     font-size: 28px;
     color:#0c1927;
 }
-.belowmenu a:hover
+.bottommenu a:hover
 {
     color: #3181a6;
     border-bottom: 3px #3181a6 solid;
