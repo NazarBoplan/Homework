@@ -12,7 +12,6 @@ main
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
     height: auto;
 }
 h1
@@ -65,6 +64,7 @@ h1 a
     cursor: pointer;
     outline: 1px solid #818181;
 }   
+
 .leftmenu ul
 {
     text-align: left;
@@ -72,10 +72,12 @@ h1 a
 }
 .leftmenu a
 {
+    display: flex;
     text-decoration: none;
     font-size: 24px;
     color: rgb(72, 88, 99);
     font-family: "Roboto";
+    transition: transform 0.5s ease-in-out;
 }
 .leftmenu  li
 { 
@@ -88,11 +90,16 @@ h1 a
     border: 1px solid black;
     text-align: left;
     height: fit-content;
-    left: 10px
+    
 }
 .leftmenu li:hover
 {
     background-color: #dbdbdb;
+}
+.leftmenu a:hover
+{
+  transform: translateX(18px);
+  transition: transform 0.5s ease;
 }
 .img-text
 {
@@ -160,8 +167,8 @@ footer
 }
 .belowmenu a:hover
 {
-    text-decoration: underline;
     color: #3181a6;
+    border-bottom: 3px #3181a6 solid;
 }
 .copy
 {
@@ -172,15 +179,3 @@ footer
     font-family: "Roboto";
 }
 
-.Copyright_©_2018 {
-    font-size: 24px;
-    font-family: "Myriad Pro";
-    color: rgb(1, 1, 1);
-    line-height: 3.75;
-    text-align: left;
-    position: absolute;
-    left: 1169.937px;
-    top: 1261.984px;
-    z-index: 5;
-  }
-  
