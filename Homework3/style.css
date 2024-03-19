@@ -18,22 +18,31 @@ header
 {
     padding-top:  49px;
     padding-left: 155px;
+    
 }
-.logo p
+br
 {
+    height: 10px;
+}
+.logo a
+{
+    height: 44px;
     text-transform: uppercase;
     float: left;
     text-decoration: none;
-    font-family: sans-serif;
-    line-height: 0.724;
+    font-family: "Verdana";
     font-size: 29px;
     font-weight: bold;
     color: white;
+    line-height: 0.760;
 }
 .Holidays
 {
+    font-size: 18px;
+    font-family: "Verdana";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     line-height: 1.167;
-    font-size: 18px;   
 }
 .logo img
 {
@@ -66,66 +75,4 @@ header
     z-index: 40;
   }
    */
-   .Header {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1366px;
-    height: 768px;
-    z-index: 44;
-  }
-  .Logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1366px;
-    height: 768px;
-    z-index: 43;
-  }
-  .HOLIDAYS {
-    font-size: 18px;
-    font-family: "Verdana";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.167;
-    text-align: left;
-    position: absolute;
-    left: 214px;
-    top: 75.997px;
-    z-index: 41;
-  }
-  .MILAN {
-    font-size: 29px;
-    font-family: "Verdana";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 0.724;
-    text-align: left;
-    position: absolute;
-    left: 213px;
-    top: 49.502px;
-    z-index: 40;
-  }
-  ._39_338_709_0880 {
-    font-size: 18px;
-    font-family: "Verdana";
-    color: rgb(255, 255, 255);
-    line-height: 1.167;
-    text-align: left;
-    position: absolute;
-    left: 1047px;
-    top: 96.954px;
-    z-index: 38;
-  }
-  .tours_milanoholidays_com {
-    font-size: 18px;
-    font-family: "Verdana";
-    color: rgb(255, 255, 255);
-    line-height: 1.167;
-    text-align: left;
-    position: absolute;
-    left: 976px;
-    top: 74.954px;
-    z-index: 37;
-  }
-  
+   
