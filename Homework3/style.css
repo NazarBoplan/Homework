@@ -13,19 +13,23 @@ header
     width: 1366px;
     max-width: 100%;
     margin: 0 auto;
+    border: 1px solid rgb(255, 0, 0);
+    height: auto;
+    
 }
 .logo
 {
-    padding-top:  49px;
-    padding-left: 155px;
+    margin-top: 49px;
+    margin-left: 155px;
     
 }
-br
+.logo img
 {
-    height: 10px;
+    float: left;
 }
-.logo a
+.logo p
 {
+    margin-left: 12px;
     height: 44px;
     text-transform: uppercase;
     float: left;
@@ -34,7 +38,7 @@ br
     font-size: 29px;
     font-weight: bold;
     color: white;
-    line-height: 0.760;
+    line-height: 0.750;
 }
 .Holidays
 {
@@ -44,12 +48,24 @@ br
     font-weight: bold;
     line-height: 1.167;
 }
-.logo img
-{
-    float: left;
+.email-number 
+{   
+    text-align: justify;
+    text-align-last: right;
+    margin-right: 147px;
+    font-size: 18px;
+    font-family: "Verdana";
+    color: rgb(255, 255, 255);
+    line-height: 1.4;   
 }
-
-
+.logo a:hover p,
+.logo a:hover .Holidays
+{
+    color: #f26522;
+}
+.logo a:hover img {
+     content: url('logo1.png'); 
+}
 /* .HOLIDAYS {
     font-size: 18px;
     font-family: "Verdana";
