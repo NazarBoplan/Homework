@@ -13,14 +13,11 @@ header
     width: 1366px;
     max-width: 100%;
     margin: 0 auto;
-    border: 1px solid rgb(255, 0, 0);
-    height: auto;
-    
 }
 .logo
 {
-    margin-top: 49px;
-    margin-left: 155px;
+    padding-top: 49px;
+    padding-left: 155px;
     
 }
 .logo img
@@ -50,7 +47,7 @@ header
 }
 .email-number 
 {   
-    text-align: justify;
+    
     text-align-last: right;
     margin-right: 147px;
     font-size: 18px;
@@ -66,29 +63,120 @@ header
 .logo a:hover img {
      content: url('logo1.png'); 
 }
-/* .HOLIDAYS {
+
+main
+{
+    width: 1366px;
+    height: auto;
+    margin: 0 auto;
+}
+.tours
+{
+    
+    
+    margin-top: 45px;
+    margin-left: 155px;
+    margin-right: 148px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 65px;
+    
+    
+}
+.object 
+{
+    
+    width: fit-content;
+    position: relative;
+    
+}  
+.object a
+{
+ text-decoration: none;   
+} 
+.object img
+{
+  border-style: solid;
+  box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.856);
+  border-width: 2px;
+  border-image: conic-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.56), rgba(12, 12, 12, 0.801), rgb(255, 255, 255), rgb(255, 255, 255)) 1;
+}
+.description
+{
     font-size: 18px;
     font-family: "Verdana";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.167;
-    text-align: left;
+    color: white;
+    line-height: 2.167;
+    text-align: center;
+}
+.dateils
+{
+    background-color: #f26522;
     position: absolute;
-    left: 214px;
-    top: 75.997px;
-    z-index: 41;
-  }
-  .MILAN {
-    font-size: 29px;
+    bottom: 0;
+    left: 0;
+    top: 57%; 
+    width: 100%;
+    height: 63px;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.4s ease-in-out;
+}
+.left_text
+{
+    margin-top: 16px;
+    margin-left: 22px;
+    margin-right: 18px;
+    font-size: 10px;
     font-family: "Verdana";
     color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 0.724;
+    line-height: 1.1;
     text-align: left;
-    position: absolute;
-    left: 213px;
-    top: 49.502px;
-    z-index: 40;
-  }
-   */
-   
+    height: 100%;
+}
+.euro
+{
+    font-size: 20px;
+    font-family: "Verdana";
+    color: rgb(255, 255, 255);
+    line-height: 1.05;
+    text-align: left; 
+}
+.right_text
+{
+    font-size: 14px;
+    font-family: "Verdana";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    float: right
+}
+.gt
+{
+    opacity: 0.502;
+}
+.object a:hover .description 
+{
+    color:#f26522;
+}
+.object a:hover .dateils 
+{
+    opacity: 1;
+    transition: transform 0.6s ease;
+    top: 67%; 
+    transform: translateY(-26px);
+} 
+footer
+{
+width: 1366px;
+margin: 0 auto;
+}
+.copy
+{
+    font-size: 12px;
+    font-family: "Verdana";
+    color: rgb(255, 255, 255);
+    line-height: 1.75;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
