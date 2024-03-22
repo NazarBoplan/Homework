@@ -11,7 +11,6 @@ body
 header
 {
     width: 1366px;
-    max-width: 100%;
     margin: 0 auto;
 }
 .logo
@@ -58,6 +57,7 @@ header
 .logo a:hover p,
 .logo a:hover .Holidays
 {
+    
     color: #f26522;
 }
 .logo a:hover img {
@@ -80,7 +80,7 @@ main
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 65px;
-    
+    width: fit-content;
     
 }
 .object 
@@ -163,7 +163,7 @@ main
     opacity: 1;
     transition: transform 0.6s ease;
     top: 67%; 
-    transform: translateY(-26px);
+    transform: translateY(-25px);
 } 
 footer
 {
