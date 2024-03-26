@@ -1,0 +1,11 @@
+body
+{
+    background-image: url("1.png");
+    background-repeat: no-repeat;
+    background-size: 1366px 912px;
+}
+@media (max-width: 300px) {
+    body {
+      background-size: 100% 100%;
+    }
+  }
