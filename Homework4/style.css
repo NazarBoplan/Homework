@@ -11,6 +11,7 @@ header
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -20,6 +21,7 @@ header
   margin-left: 152px;
   padding-top: 22px;
   padding-bottom: 22px;
+  
 }
 .logo a
 {
@@ -29,6 +31,7 @@ header
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.05;
+  transition: 0.6s;
 }
 .icons
 {
@@ -86,6 +89,7 @@ header
 .logo a:hover
 {
   color: #3cb878;
+  transition: 0.6s;
 }
 .icon1:hover
 {
@@ -105,25 +109,28 @@ header
 .log:hover 
 {
   color: #3cb878;
-    border-bottom: 1px #3cb878 solid;
+  border-bottom: 1px #3cb878 solid;
 }
 .sign:hover 
 {
   color: #3cb878;
-    border-bottom: 1px #3cb878 solid;
+  border-bottom: 1px #3cb878 solid;
 }
 main
 {
   display: flex;
   justify-content: center;
   margin-top: 65px;
+  flex-wrap: wrap;
 }
 .reg
 {
   background-color: white;
   width: 444px;
-  height: 584px;
+  height: auto;
   border-radius: 5px;
+  max-width: -webkit-fill-available;
+  margin-bottom: 35px;
 }
 .zagolovok
 {
@@ -152,6 +159,7 @@ main
   line-height: 1.05;
   margin-left: 42px;
 }
+
 .shape {
   background-image: url("main/shape.png");
   width: 18px;
@@ -164,12 +172,10 @@ main
 }
 .buttons
 {
-  display: grid;
-  grid-template-columns: auto auto ;
-  gap: 8px;
-  padding-left: 62px;
-  padding-right: 60px;
+  display: flex;
+  justify-content: center;
   margin-top: 17px;
+  flex-wrap: wrap;
 }
 .buttons a
 {
@@ -183,6 +189,13 @@ main
   height: 46px;
   align-items: center;
   display: flex;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.Facebook:hover
+{
+  background-color: #264b96;
+  transition: 0.3s;
 }
 .f
 {
@@ -206,6 +219,12 @@ main
   height: 46px;
   display: flex;
   align-items: center;
+  transition: 0.3s;
+}
+.Google:hover
+{
+  background-color: #c3412c;
+  transition: 0.3s;
 }
 .G
 {
@@ -256,5 +275,114 @@ main
   font-family: "Verdana";
   color: rgb(132, 132, 132);
   line-height: 1.5;
-} 
+}
+form
+{
+  font-size: 14px;
+  font-family: "Verdana";
+  color: rgb(67, 67, 67);
+  padding-left: 62px;
+  padding-right: 60px;
+  padding-bottom: 32px;
+  padding-top: 18px;
+  flex-wrap: wrap;
+  display: flex; 
+}
+form input[type="text"]
+{
+  width: 303px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-left: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  max-width: -webkit-fill-available;
+}
+form input[type="password"]
+{
+  width: 303px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-left: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  max-width: -webkit-fill-available;
+}
+form input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.288);
+}
+form input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.288);
+}
+input[type="checkbox"] 
+{
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  appearance: none;
+  background-color: transparent;
+  position: relative;
+  line-height: 1.5;
+}
 
+input[type="checkbox"]:checked::before 
+{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 3px;
+  height: 6px;
+  border-right: 2px solid #3cb878;
+  border-bottom: 2px solid #3cb878;
+  transform: rotate(45deg);
+}
+label
+{
+  font-size: 14px;
+  font-family: "Verdana";
+  color: rgb(67, 67, 67);
+  line-height: 1.5;
+  margin-left:10px;
+}
+.Agree_ a
+{
+  text-decoration: none;
+  color: rgb(60, 184, 120);
+  font-size: 14px;
+  font-family: "Verdana";
+  line-height: 1.5;
+}
+.Agree_ a:hover
+{
+  border-bottom: 1px #3cb878 solid;
+}
+button
+{
+  width: 322px;
+  height: 46px;
+  border-radius: 3px;
+  border-color: white;
+  background-color: #329a65;
+  font-size: 16px;
+  font-family: "Verdana";
+  color: rgb(255, 255, 255);
+  line-height: 1.313;
+  margin-top: 28px;
+  max-width: -webkit-fill-available;
+  transition: 0.3s;
+}
+button:hover
+{
+  transition: 0.3s;
+  background-color: #2a8556;
+}
