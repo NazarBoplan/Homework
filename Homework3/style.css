@@ -72,24 +72,31 @@ main
 }
 .tours
 {
-    
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 45px;
-    margin-left: 155px;
-    margin-right: 148px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 65px;
-    width: fit-content;
-    
 }
 .object 
 {
-    
-    width: fit-content;
+    margin-right: 65px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
     position: relative;
-    
-}  
+}
+.object:nth-child(3n+1) {
+    margin-left: 144px;
+}
+.object:nth-child(3n+3) {
+    margin-right: 144px;
+}
+.object:nth-child(n+4) {
+    margin-top: 50px;
+}
 .object a
 {
  text-decoration: none;   
@@ -167,8 +174,8 @@ main
 } 
 footer
 {
-width: 1366px;
-margin: 0 auto;
+    width: 1366px;
+    margin: 0 auto;
 }
 .copy
 {
@@ -178,5 +185,5 @@ margin: 0 auto;
     line-height: 1.75;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
