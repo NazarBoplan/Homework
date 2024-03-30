@@ -47,7 +47,8 @@ header
 .email-number 
 {   
     
-    text-align-last: right;
+    float: right;
+    text-align: end;
     margin-right: 147px;
     font-size: 18px;
     font-family: "Verdana";
@@ -67,41 +68,47 @@ header
 main
 {
     width: 1366px;
-    height: auto;
     margin: 0 auto;
 }
-.tours
+.cards
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 45px;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 100%;
+    width: 1366px;
+    padding-top: 48px; 
 }
-.object 
+.object1
 {
-    margin-right: 65px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    float: left;
+    margin-left: 147px;
+}
+.object2
+{
+    float: left;
+    margin-left: 67px;
+}
+.object3
+{
     float: right;
+    margin-right: 147px;
+}
+.card1, .card2, .card3, .card4, .card5, .card6
+{
+    display: flex;
     position: relative;
 }
-.object:nth-child(3n+1) {
-    margin-left: 144px;
-}
-.object:nth-child(3n+3) {
-    margin-right: 144px;
-}
-.object:nth-child(n+4) {
-    margin-top: 50px;
-}
-.object a
+.card1 a, .card2 a, .card3 a, .card4 a, .card5 a, .card6 a
 {
- text-decoration: none;   
-} 
-.object img
+    font-size: 18px;
+    font-family: "Verdana";
+    color: white;
+    line-height: 2.167;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img
 {
   border-style: solid;
   box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.856);
@@ -161,11 +168,74 @@ main
 {
     opacity: 0.502;
 }
-.object a:hover .description 
+.card1, .card3, .card5 
+{
+    margin-bottom: 48px;
+}
+.card2, .card4, .card6 
+{
+    margin-bottom: 10px;
+}
+.card1 a:hover .description 
 {
     color:#f26522;
 }
-.object a:hover .dateils 
+.card1 a:hover .dateils 
+{
+    opacity: 1;
+    transition: transform 0.6s ease;
+    top: 67%; 
+    transform: translateY(-25px);
+} 
+.card2 a:hover .description 
+{
+    color:#f26522;
+}
+.card2 a:hover .dateils 
+{
+    opacity: 1;
+    transition: transform 0.6s ease;
+    top: 67%; 
+    transform: translateY(-25px);
+} 
+.card3 a:hover .description 
+{
+    color:#f26522;
+}
+.card3 a:hover .dateils 
+{
+    opacity: 1;
+    transition: transform 0.6s ease;
+    top: 67%; 
+    transform: translateY(-25px);
+} 
+.card4 a:hover .description 
+{
+    color:#f26522;
+}
+.card4 a:hover .dateils 
+{
+    opacity: 1;
+    transition: transform 0.6s ease;
+    top: 67%; 
+    transform: translateY(-25px);
+} 
+.card5 a:hover .description 
+{
+    color:#f26522;
+}
+.card5 a:hover .dateils 
+{
+    opacity: 1;
+    transition: transform 0.6s ease;
+    top: 67%; 
+    transform: translateY(-25px);
+} 
+.card6 a:hover .description 
+{
+    color:#f26522;
+}
+.card6 a:hover .dateils 
 {
     opacity: 1;
     transition: transform 0.6s ease;
