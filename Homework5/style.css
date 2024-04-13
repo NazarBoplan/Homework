@@ -6,58 +6,84 @@ main
 {
     display: flex;
     flex-wrap: wrap;
+    background-color: #dddddd;
+    width: 1192px;
+    height: 736px;
+    margin: 0 auto;
+    
 }
 @font-face {
-    font-family:"Arimo";
+    font-family:"Arimo Bold";
     src: url("Arimo/ArimoBold.ttf") ,format("opentype");
 }  
+@font-face {
+    font-family:"Arimo";
+    src: url("Arimo/ArimoRegular.ttf") ,format("opentype");
+} 
 .s1, .s2, .s3, .s4
 {
     width: 310px;
-    display: grid;
-    grid-template-columns: auto;
     flex: 0 0 25%;
 }
 .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8
 {
-    background-color: #fafafa;
-    padding: 20px 0; font-size: 15px;
+    background-color: #fafafa; 
     text-align: center;
 }
-
-
-
-.s1.item1
+.item1
 {
     font-size: 18px;
-    font-family: "Arimo";
+    font-family: "Arimo Bold";
     color: rgb(72, 72, 72);
     line-height: 1.556;
     text-align: center;
+    
 }
 .plan
 {
     font-size: 30px;
-    font-family: "Arimo";
+    font-family: "Arimo Bold";
     color: rgb(72, 72, 72);
     text-transform: uppercase;
     line-height: 0.933;
     text-align: center;
 }
-
-.s2 .item11
+.item11
+{
+    
+}
+.price
+{
+    display: flex;
+    justify-content: center;
+}
+.dol
+{
+    font-size: 60px;
+    font-family: "Arimo Bold";
+    color: rgb(72, 72, 72);  
+    text-transform: uppercase;
+    line-height: 0.83;
+}
+.cent
 {
     font-size: 24px;
-    color: rgb(255, 255, 255);
-    font-family: "Arimo";
+    font-family: "Arimo Bold";
+    color: rgb(72, 72, 72);
     text-transform: uppercase;
-    line-height: 1.167;
-    text-align: center;
-    background-color: rgb(137, 195, 49);
+    line-height: 1.08;
+    text-align: left;
 }
-      
+.per
+{
+    font-size: 18px;
+    font-family: "Arimo";
+    color: rgb(72, 72, 72);
+    text-transform: uppercase;
+    text-align: left; 
+}
 
-
+  
 
 
   
