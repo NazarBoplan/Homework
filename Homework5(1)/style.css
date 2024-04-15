@@ -156,15 +156,24 @@ main
     justify-content: center;
     align-items: center;       
 } 
-/* .item22
+.text_
 {
-    width: 277px;
-    height: 86px;
-    background-color:#fafafa;
     display: flex;
     justify-content: center;
-    align-items: center;
-} */
+    align-items: center;  
+    width: 277px;
+    height: 69px;
+    font-size: 16px;
+    font-family: "Arimo";
+    color: rgb(72, 72, 72);
+    text-transform: uppercase;
+    line-height: 1.75;
+     
+}
+.first
+{
+    display: flex;
+}
 .price
 {
     display: flex;
