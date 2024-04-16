@@ -119,12 +119,12 @@ body
 }
 .knopka:hover
 {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(107, 107, 107);
     transition: 0.3s ease-in;
 }
 .knopka:active
 {
-    background-color: #fafafa; 
+    background-color: rgb(121, 121, 121);; 
 }
 
 /* 2 Таблиця - Умови */
@@ -316,6 +316,7 @@ body
     justify-content: center; 
     align-items: center;
     box-shadow: inset 0px -7px 2px 0px rgba(0, 0, 0, 0.27);
+    transition: 0.4s ease-out;
 }
 .agreement2
 {
@@ -331,6 +332,7 @@ body
     justify-content: center; 
     align-items: center;
     box-shadow: inset 0px -7px 2px 0px rgba(0, 0, 0, 0.27);
+    transition: 0.4s ease-out;
 }
 .agreement3
 {
@@ -346,10 +348,11 @@ body
     justify-content: center; 
     align-items: center;
     box-shadow: inset 0px -7px 2px 0px rgba(0, 0, 0, 0.27);
+    transition: 0.4s ease-out;
 }
 .agreement1:hover
 {
-    background-color:#7baf2c;
+    background-color:#6e9e27;
     transition: 0.3s ease-in;
 }
 .agreement1:active
@@ -358,7 +361,7 @@ body
 }
 .agreement2:hover
 {
-    background-color: #d4424b;
+    background-color: #c73f48;
     transition: 0.3s ease-in;
 }
 .agreement2:active
