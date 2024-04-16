@@ -1,16 +1,18 @@
-body
-{
-    background-color: #3a4965;
-}
 main
 {
     display: flex;
     flex-wrap: wrap;
-    background-color: #dddddd;
     width: 1192px;
-    height: 736px;
+    height: auto;
     margin: 0 auto;
-    
+}
+main
+{
+    padding-top: 24px;
+}
+body
+{
+    background-color:#3a4965;
 }
 @font-face {
     font-family:"Arimo Bold";
@@ -20,17 +22,20 @@ main
     font-family:"Arimo";
     src: url("Arimo/ArimoRegular.ttf") ,format("opentype");
 } 
-/* Перший стовпець */
+ /* Перший стовпець */
 .item1
 {
     font-size: 18px;
     font-family: "Arimo Bold";
     color: rgb(72, 72, 72);
     line-height: 1.556;
-    text-align: center;
     background-color: #fafafa;;
     width: 310px;
-    height: 156px;     
+    height: 156px;
+    text-transform: uppercase; 
+    display: flex;
+    justify-content: center;
+    align-items: center;        
 }
 .plan
 {
@@ -41,11 +46,7 @@ main
     line-height: 0.933;
     text-align: center;
 }
-.choose
-{
-     padding: 40px 0px 56px;
-}
- .item2, .item3, .item4, .item5, .item6, .item7
+.item2, .item3, .item4, .item5, .item6, .item7
 {
     display: flex;
     justify-content: center;
@@ -53,7 +54,9 @@ main
     text-align: center;
     width: 310px;
     height: 69px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.27);
+    box-shadow: 2px 9px 5px 0px rgba(0, 0, 0, 0.27);
+    
+    
 }
 .item3, .item5, .item7
 {
@@ -62,14 +65,6 @@ main
 .item2, .item4, .item6
 {
     background-color:#f2f2f2; 
-}
-.text
-{
-    font-size: 16px;
-    font-family: "Arimo";
-    color: rgb(72, 72, 72);
-    text-transform: uppercase;
-    line-height: 1.75;
 }
 .fa-archive, .fa-cloud-upload, .fa-envelope, .fa-life-ring, .fa-cube, .fa-users
 {
@@ -80,25 +75,66 @@ main
     line-height: 1.167;
     margin-right: 10px;  
 }
+.text
+{
+    font-size: 16px;
+    font-family: "Arimo";
+    color: rgb(72, 72, 72);
+    text-transform: uppercase;
+    line-height: 1.75;
+}
 .item8
 {
     background-color: rgb(221, 221, 221);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.27);
+    
     width: 310px;
-    height: 166px;
+    height: 129px;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
-/* Другий стовпець */
-.item11
+.knopka
 {
-    background-color: rgb(137, 195, 49);
-    width: 277px;
-    height: 70px;
+    border-radius: 5px;
+    background-color: rgb(72, 72, 72);
+    width: 192px;
+    height: 49px;
+    display: flex;
+    transition: 0.4s ease-out;
+    box-shadow: inset 0px -7px 2px 0px rgba(0, 0, 0, 0.27);
+}
+.contact
+{
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 192px;
+    height: 49px;
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+.knopka:hover
+{
+    background-color: rgb(63, 63, 63);
+    transition: 0.3s ease-in;
+}
+.knopka:active
+{
+    background-color: #fafafa; 
+}
+
+/* 2 Таблиця - Умови */
+.Сonditions
+{
+    display: flex;
+}
+.plans
+{
+    display: flex;
 }
 .standard
 {
@@ -106,9 +142,47 @@ main
     font-family: "Arimo Bold";
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    line-height: 1.167;       
-}  
-.item22
+    line-height: 1.167; 
+    background-color: rgb(137, 195, 49);
+    width: 277px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+}
+.ultimate
+{
+    font-size: 24px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.167;
+    background-color: #f04a56;
+    width: 277px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+.premium
+{
+    font-size: 24px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.167;
+    background-color: #20807c;
+    width: 277px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+.price
+{
+    display: flex;
+}
+.priice
 {
     display: flex;
     justify-content: center;
@@ -116,6 +190,10 @@ main
     width: 277px;
     height: 86px;
     background-color:#fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27);
 }
 .dol
 {
@@ -142,11 +220,157 @@ main
     text-transform: uppercase;
     text-align: left; 
 }
-
-  
-
-
-  
-
-
-
+.storage
+{
+    display: flex;
+} 
+.text1
+{
+    font-size: 16px;
+    font-family: "Arimo";
+    color: rgb(72, 72, 72);
+    text-transform: uppercase;
+    line-height: 1.75;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 277px;
+    height: 69px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27);
+} 
+.storage .text1, .email .text1, .products .text1
+{
+    background-color:#f2f2f2;
+}
+.bandwidth .text1, .text2, .text3, .users .text1
+{
+    background-color:#e3e3e3;
+}  
+.bandwidth
+{
+    display: flex;
+}
+.text2
+{
+    font-size: 16px;
+    font-family: "Arimo";
+    color: rgb(72, 72, 72);
+    line-height: 1.75;
+    width: 554px;
+    height: 69px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27); 
+}
+.email
+{
+    display: flex;
+}
+.text3
+{
+    font-size: 16px;
+    font-family: "Arimo";
+    color: rgb(72, 72, 72);
+    line-height: 1.75;
+    width: 831px;
+    height: 69px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27); 
+}
+.products
+{
+    display: flex;
+}
+.users
+{
+    display: flex;
+}
+.knopki
+{
+    display: flex;
+}
+.knopka1
+{
+    width: 277px;
+    height: 129px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color:#eeeeee;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27);
+}
+.agreement1
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #89c331;
+    width: 192px;
+    height: 49px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: inset 0px -7px 2px 0px rgba(0, 0, 0, 0.27);
+}
+.agreement2
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #f04a56;
+    width: 192px;
+    height: 49px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: inset 0px -7px 2px 0px rgba(0, 0, 0, 0.27);
+}
+.agreement3
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #20807c;
+    width: 192px;
+    height: 49px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: inset 0px -7px 2px 0px rgba(0, 0, 0, 0.27);
+}
+.agreement1:hover
+{
+    background-color:#7baf2c;
+    transition: 0.3s ease-in;
+}
+.agreement1:active
+{
+    background-color: #fafafa;  
+}
+.agreement2:hover
+{
+    background-color: #d4424b;
+    transition: 0.3s ease-in;
+}
+.agreement2:active
+{
+    background-color: #fafafa;  
+}
+.agreement3:hover
+{
+    background-color: #185f5d;
+    transition: 0.3s ease-in;
+}
+.agreement3:active
+{
+    background-color: #fafafa;  
+}
