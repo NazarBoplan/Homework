@@ -1,3 +1,7 @@
+body
+{
+    background-color:#3a4965;
+}
 main
 {
     display: flex;
@@ -5,24 +9,26 @@ main
     width: 1197px;
     height: auto;
     margin: 0 auto;
-}
-main
-{
     padding-top: 24px;
-    display: flex;
-}
-body
-{
-    background-color:#3a4965;
 }
 @font-face {
     font-family:"Arimo Bold";
-    src: url("Arimo/ArimoBold.ttf") ,format("opentype");
-}  
+    src: url("Arimo/arimo-bold.eot");
+    src: url("Arimo/arimo-bold.eot?#iefix") format("embedded-opentype"),
+         url("Arimo/arimo-bold.woff2") format("woff2"),
+         url("Arimo/arimo-bold.woff") format("woff"), 
+         url("Arimo/arimo-bold.ttf") format("truetype"), 
+         url("Arimo/arimo-bold.svg#Arimo Bold") format("svg"); 
+} 
 @font-face {
     font-family:"Arimo";
-    src: url("Arimo/ArimoRegular.ttf") ,format("opentype");
-} 
+    src: url("Arimo/arimo.eot"); 
+    src: url("Arimo/arimo.eot?#iefix") format("embedded-opentype"),
+         url("Arimo/arimo.woff2") format("woff2"), 
+         url("Arimo/arimo.woff") format("woff"), 
+         url("Arimo/arimo.ttf") format("truetype"), 
+         url("Arimo/arimo.svg#Arimo") format("svg"); 
+}
 /* 1 стовпець */
 .item1
 {
@@ -156,7 +162,8 @@ body
     color: rgb(132, 132, 132);
     text-transform: uppercase;
 }
-.icon-storage{
+.icon-storage
+{
     width: 157px;
     height: 113px;
     font-size: 20px;
@@ -164,7 +171,6 @@ body
     color: rgb(72, 72, 72);
     text-transform: uppercase;
     line-height: 1.75;
-    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,8 +194,6 @@ body
     text-align: center;
     box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.27);
 }
-
-/* 3,5,7, стовпець */
 .Bandwidth, .Support, .Users
 {
     background-color: #f2f2f2
