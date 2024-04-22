@@ -1,0 +1,134 @@
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1192px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+body
+{
+    background-color:#3a4965;
+}
+@font-face {
+    font-family:"Arimo Bold";
+    src: url("Arimo/ArimoBold.ttf") ,format("opentype");
+}  
+@font-face {
+    font-family:"Arimo";
+    src: url("Arimo/ArimoRegular.ttf") ,format("opentype");
+} 
+.item
+{
+    display: flex;
+}
+
+.choose
+{
+    font-size: 18px;
+    font-family: "Arimo Bold";
+    color: rgb(72, 72, 72);
+    line-height: 1.556;
+    background-color: #fafafa;;
+    /* width: 310px; */
+    /* height: 156px; */
+    text-transform: uppercase; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;         */
+}
+.plan
+{
+    font-size: 30px;
+    font-family: "Arimo Bold";
+    color: rgb(72, 72, 72);
+    text-transform: uppercase;
+    line-height: 0.933;
+    text-align: center;
+}
+.standard
+{
+    font-size: 24px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.167; 
+    background-color: rgb(137, 195, 49);
+    /* width: 277px;
+    height: 70px; */
+    
+    padding: 25px 72px;       
+}
+.ultimate
+{
+    font-size: 24px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.167;
+    background-color: #f04a56;
+    /* width: 277px;
+    height: 70px; */
+    
+    padding: 25px 72px;        
+}
+.premium
+{
+    font-size: 24px;
+    font-family: "Arimo Bold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.167;
+    background-color: #20807c;
+    /* width: 277px;
+    height: 70px; */
+    
+    padding: 25px 72px;        
+}
+.priice
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* width: 277px;
+    height: 86px; */
+    background-color:#fafafa;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.27);
+}
+tr
+{
+    display: table-row;
+}
+.dol
+{
+    font-size: 60px;
+    font-family: "Arimo Bold";
+    color: rgb(72, 72, 72);  
+    text-transform: uppercase;
+    line-height: 0.83;
+}
+.cent
+{
+    font-size: 24px;
+    font-family: "Arimo Bold";
+    color: rgb(72, 72, 72);
+    text-transform: uppercase;
+    line-height: 1.08;
+    text-align: left;
+}
+.per
+{
+    font-size: 18px;
+    font-family: "Arimo";
+    color: rgb(72, 72, 72);
+    text-transform: uppercase;
+    text-align: left; 
+}
+table
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
