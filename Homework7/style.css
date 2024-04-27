@@ -3,7 +3,7 @@ body
     background-color: rgb(20, 20, 20);
     overflow: hidden;
     font-family: "Roboto";
-    /* margin: 50% 0px 0px 0px;  */
+    margin: 25% 0px 0px 0px; 
     position: relative;
 }
 .wrapper
@@ -12,12 +12,12 @@ body
     height: 100%;
     width: 60%;
     margin: 0 auto;
-    perspective: 300px;
+    perspective: 575px;
 }
 .scroll-text
 {
     color: rgb(255, 217, 0);
-    font-size: 30px;
+    font-size: 55px;
     line-height: 1.5;
     font-weight: bold;
     text-align: justify;
@@ -32,6 +32,6 @@ h1,h2
 @keyframes scroll
 {
     from {top: 0; transform: translateZ(0) rotateX(15deg);}
-    to { top: -1000px; transform: translateZ(-500px) rotateX(16deg);}
+    to { top: -2500px; transform: translateZ(-450px) rotateX(15deg);}
 }
 
