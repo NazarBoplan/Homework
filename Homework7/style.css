@@ -28,11 +28,6 @@ h1,h2
 {
     text-align: center;
 }
-/* @keyframes scroll
-{
-    from {top: 0; transform: translateZ(0) rotateX(15deg);}
-    to { top: -2000px; transform: translateZ(-450px) rotateX(15deg);}
-} */
 @keyframes scroll
 {
     from {top: 0; transform: translateZ(0) rotateX(15deg);}
