@@ -33,11 +33,11 @@ do{
     const isInteger = value => Number.isInteger(Number(value));
     let m, n;
     do {
-        let input_m = prompt("Введіть перше число (m):");
-        let input_n = prompt("Введіть друге число (n):");
-        if (isInteger(input_m) && isInteger(input_n)) {
-            m = parseInt(input_m);
-            n = parseInt(input_n);
+        m = prompt("Введіть перше число (m):");
+        n = prompt("Введіть друге число (n):");
+        if (isInteger(m) && isInteger(n)) {
+            m = parseInt(m);
+            n = parseInt(n);
             if (m > n) {
                 alert("Перше число не може бути більше другого!");
                 continue;
