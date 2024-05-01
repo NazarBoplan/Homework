@@ -1,33 +1,26 @@
-const getUserData = (defaultName = '', defaultAge = '') => {
-    let name = defaultName;
-    let age = defaultAge;
+const user_data = (Name = '', Age = '') => {
+    let name = Name;
+    let age = Age;
 
     while (!name || isNaN(age)) {
-        name = prompt('Please enter your name:', defaultName);
-        age = prompt('Please enter your age:', defaultAge);
+        name = prompt('Введіть ім`я:', Name);
+        age = prompt('Вкажіть свій вік:', Age);
     }
-
     return { name, age: parseInt(age) };
 };
-
-// Функция для проверки возраста и отображения соответствующего сообщения
-const checkAgeAndDisplayMessage = (name, age) => {
+const check = (name, age) => {
     if (age < 18) {
-        alert('You are not allowed to visit this website');
+        alert('Шуруй звідси , ще занадто молодий для такого');
     } else if (age >= 18 && age <= 22) {
-        const confirmation = confirm('Are you sure you want to continue?');
+        const confirmation = confirm('Ти хочеш продовжити?');
         if (confirmation) {
-            alert('Welcome, ' + name);
+            alert('Вітаю, ' + name);
         } else {
-            alert('You are not allowed to visit this website');
+            alert('Відхилено');
         }
     } else {
-        alert('Welcome, ' + name);
+        alert('Вітаю, ' + name);
     }
 };
-
-// Получаем данные пользователя
-const userData = getUserData();
-
-// Проверяем данные пользователя и отображаем сообщение
-checkAgeAndDisplayMessage(userData.name, userData.age);
+const user = user_data();
+check(user.name, user.age);
