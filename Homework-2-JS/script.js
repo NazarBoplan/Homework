@@ -1,29 +1,75 @@
+// do{
+//     const input = prompt("Введіть число:");
+//     const number = parseFloat(input);
+//     if (isNaN(number)) {
+//         alert("Введіть числове значення!");
+//     } 
+//     else if (!Number.isInteger(number)) {
+//         alert("Введіть ціле число!");
+//     } 
+//     else {
+//         let result = '';
+//         let found = false;
+//         const start = Math.min(0, number);
+//         const end = Math.max(0, number);
+//         for (let i = start; i <= end; i++) {
+//             if (i % 5 === 0) {
+//                 result += i + ', ';
+//                 found = true;
+//             }
+//         }
+//         if (found) {
+//             alert(result);
+//         } 
+//         else 
+//         {
+//             alert("У заданому діапазоні немає чисел, кратних 5");
+//         }
+//     }
+// }while(confirm("Продовжуємо?"));
+
+
 do{
-    const input = prompt("Введіть число:");
-    const number = parseFloat(input);
-    if (isNaN(number)) {
-        alert("Введіть числове значення!");
-    } 
-    else if (!Number.isInteger(number)) {
-        alert("Введіть ціле число!");
-    } 
-    else {
-        let result = '';
-        let found = false;
-        const start = Math.min(0, number);
-        const end = Math.max(0, number);
-        for (let i = start; i <= end; i++) {
-            if (i % 5 === 0) {
-                result += i + ', ';
-                found = true;
+    const isInteger = value => Number.isInteger(Number(value));
+    let m, n;
+    do {
+        let input_m = prompt("Введіть перше число (m):");
+        let input_n = prompt("Введіть друге число (n):");
+        if (isInteger(input_m) && isInteger(input_n)) {
+            m = parseInt(input_m);
+            n = parseInt(input_n);
+            if (m > n) {
+                alert("Перше число не може бути більше другого!");
+                continue;
+            }
+            break;
+        } else {
+            alert("Введіть цілі числа!");
+        }
+    } while (true);
+
+    const Simple = number => {
+        if (number <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false;
             }
         }
-        if (found) {
-            alert(result);
-        } 
-        else 
-        {
-            alert("У заданому діапазоні немає чисел, кратних 5");
+        return true;
+    };
+
+    let simple_numbers = '';
+    for (let i = m; i <= n; i++) {
+        if (Simple(i)) {
+            simple_numbers += i + ', ';
         }
     }
-}while(confirm("Продовжуємо?"));
+
+    if (simple_numbers) {
+        alert(`Прості числа від ${m} до ${n}:\n${simple_numbers}`);
+    } else {
+        alert(`У заданому діапазоні немає простих чисел.`);
+    }
+}while(confirm('Продовжуємо?'))
