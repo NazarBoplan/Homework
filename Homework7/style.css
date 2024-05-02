@@ -34,3 +34,8 @@ h1,h2
     to { top: -2600px; transform: translateZ(-600px) rotateX(16deg);}
 }
 
+audio
+{
+    width: 0px;
+    height: 0px;
+}
