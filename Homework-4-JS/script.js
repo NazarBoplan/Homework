@@ -8,4 +8,5 @@ const createNewUser = () => {
     return newUser; 
 };
 const user = createNewUser();
-alert("Логін користувача: " + user.getLogin());
+console.log("Логін користувача: " + user.getLogin());
+console.log(newUser);
