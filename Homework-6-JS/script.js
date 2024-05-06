@@ -7,5 +7,5 @@ function filterBy(array, type) {
 
 let array = ['hello', 'world', 23, '23', null];
 let result = filterBy(array, 'string');
-console.log('Original Array:', result.original);
-console.log('Filtered Array:', result.filtered);
+console.log('Початкові дані:', result.original);
+console.log('Результат:', result.filtered);
