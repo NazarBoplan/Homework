@@ -37,6 +37,7 @@ const createNewUser = () => {
     
     return newUser;
 }
+createNewUser();
 // let user = createNewUser();
 // user.setFirstName("Тарас");
 // user.setLastName("Шевченко");
