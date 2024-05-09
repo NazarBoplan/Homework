@@ -1,51 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const priceinput = document.getElementById("priceInput");
+    const priceinput = document.getElementById("price_input");
     const errorDisplay = document.querySelector(".error");
     const priceDisplay = document.querySelector(".price-display");
 
     priceinput.addEventListener("focus", () => {
         priceinput.style.color = "";
-        priceDisplay.hidden = true; 
+        priceinput.style.borderColor = ""; 
     });
 
     const show_error = (message) => {
         errorDisplay.textContent = message;
         errorDisplay.hidden = false; 
-        priceInput.style.borderColor = "red";
+        priceinput.style.borderColor = "red";
     };
 
-    priceinput.addEventListener("blur", () => {
-        const price = parseFloat(priceInput.value);
-        if (price < 0 || isNaN(price)) {
-            show_error("Введіть коректну ціну");
-        } else {
-            priceInput.style.borderColor = "";
-        }
-    });
-
-    window.showPrice = () => {
-        const price = parseFloat(priceinput.value);
-        if (price < 0 || isNaN(price)) {
-            show_error("Введіть коректну ціну");
-        } else {
-            showPriceDisplay(price);
-        }
-    };
-
-    const showPriceDisplay = (price) => {
-        priceDisplay.innerHTML = `<span>Ціна: ${price}</span><button onclick="clearPrice()">X</button>`;
+    const showprice = (price) => {
+        priceDisplay.innerHTML = `<span>Ціна: ${price}</span><button id="clear">X</button>`;
         priceDisplay.classList.add("border");
         priceDisplay.hidden = false; 
         priceinput.style.color = "green";
         errorDisplay.hidden = true; 
+        document.getElementById("clear").addEventListener("click", clearPrice);
     };
-
-    window.clearPrice = () => {
+    const clearPrice = () => {
         priceDisplay.innerHTML = "";
         priceDisplay.hidden = true; 
-        priceinput.value = "";
+        // priceInput.value = "";
         priceDisplay.style.border = "none";
-        priceinput.style.color = "";
+        // priceInput.style.color = "";
         errorDisplay.hidden = true; 
     };
+    priceinput.addEventListener("blur", () => {
+        const price = parseFloat(priceinput.value);
+        if (price < 0 || isNaN(price)) {
+            show_error("Введіть коректну ціну");
+        } else {
+            showprice(price);
+        }
+    });
+    const initialPrice = parseFloat(priceinput.value);
+    if (!isNaN(initialPrice) && initialPrice >= 0) {
+        showprice(initialPrice);
+    }
 });

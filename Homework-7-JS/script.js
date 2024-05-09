@@ -20,7 +20,7 @@ const list = (arr) => {
 const data = ['hello', 'world', 'Kiev', 23, ['never'], 'Kharkiv', 'Odessa', 'Lviv'];
 list(data);
 
-const deleteelements = document.createElement('div');
+const deleteelements = document.createElement('lebel');
 deleteelements.textContent = 'Сторінка буде очищена через 10 секунд';
 document.body.appendChild(deleteelements);
 

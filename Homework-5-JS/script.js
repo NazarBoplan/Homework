@@ -38,10 +38,3 @@ const createNewUser = () => {
     return newUser;
 }
 createNewUser();
-// let user = createNewUser();
-// user.setFirstName("Тарас");
-// user.setLastName("Шевченко");
-// console.log(`Ім'я: ${user.firstName}`);
-// console.log(`Фамілія: ${user.lastName}`);
-// console.log(`Новий Логін: ${user.getLogin()}`);
-// console.log(`Пароль: ${user.getPassword()}`);
